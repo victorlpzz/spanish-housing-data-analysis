@@ -21,7 +21,16 @@ This project uses official public data, mainly from:
 - [Ministerio de Vivienda y Agenda Urbana (MIVAU)](https://www.mivau.gob.es/) — housing price series and statistics.
 - [Instituto Nacional de Estadística (INE)](https://www.ine.es/) — socioeconomic and demographic data.
 
-Data is reused under the terms published by each institution (typically free reuse with attribution — verify and specify exact license/terms here).
+### Ministerio de Vivienda y Agenda Urbana (MIVAU)
+
+The initial dataset used in this project is the official MIVAU dataset "Valor tasado de la Vivienda", which contains the average appraised value of housing in €/m², disaggregated by housing regime, province, autonomous community and quarterly period.
+
+- Source: Ministerio de Vivienda y Agenda Urbana (MIVAU)
+- Dataset: Valor tasado de la Vivienda
+- Format: CSV
+- License: CC BY 4.0
+
+The original dataset is stored in data/raw/ without modification.
 
 ## Tech stack
 
@@ -36,14 +45,14 @@ Data is reused under the terms published by each institution (typically free reu
 
 ```
 spanish-housing-analysis/
+── LICENSE
+├── README.md
 ├── data/
-│   ├── raw/            # Original, unmodified data
-│   └── processed/      # Cleaned data ready for analysis
-├── notebooks/           # Exploratory analysis notebooks
-├── src/                 # Reusable scripts/functions
-├── outputs/              # Generated figures and results
-├── requirements.txt
-└── README.md
+│   ├── processed/
+│   └── raw/
+├── figures/
+├── notebooks/
+├── src/
 ```
 
 ## How to run this project
